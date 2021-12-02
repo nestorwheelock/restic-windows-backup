@@ -20,13 +20,13 @@ $SnapshotMaintenanceDays = 30
 $SnapshotDeepMaintenanceDays = 90;
 
 # email configuration
-$SendEmailOnSuccess = $false
+$SendEmailOnSuccess = $true
 $SendEmailOnError = $true
 
 # Paths to backup
 $BackupSources = @{}
 $BackupSources["C:\"] = @(
-#    'Users'
+    'Users'
 )
 #$BackupSources["D:\"] = @(
 #    'Software'
