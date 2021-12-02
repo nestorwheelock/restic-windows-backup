@@ -1,0 +1,13 @@
+mkdir C:\restic
+download our zip and extract the files
+download secrets.ps1
+make any adjustments to the config.ps1 and windows.exclude files
+
+open powershell as administrator copy and paste the following:
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+Set-ExecutionPolicy -ExecutionPolicy Unrestricted
+Unblock-File C:\restic\*.ps1
+cd C:\restic
+.\install.ps1
+
